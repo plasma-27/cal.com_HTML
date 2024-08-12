@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Register</legend>
+            <label for="text-input">Name</label>
+            <input type="text" id="text-input" name="text_input" required>
+            <label for="select">Gender</label>
+            <select id="select" name="select">
+                <option value="option1">Male</option>
+                <option value="option2">Female</option>
+                <option value="option3">Other</option>
+            </select>
+            <label for="text-input">Username</label>
+            <input type="text" id="text-input" name="text_input" required>
+    
+            <label for="password-input">Password</label>
+            <input type="password" id="password-input" name="password_input" required>
+    
+            <label for="textarea">Purpose of Using cal.com</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Describe in briefly" required></textarea>
+    
+            <label>Use case</label><br>
+            <input  type="radio" id="radio1" name="radio_group" value="Personal" checked>
+            <label for="radio1">Personal</label>
+            <input type="radio" id="radio2" name="radio_group" value="Business">
+            <label for="radio2">Business</label>
+            <br>
+            <label>I want to..</label><br>
+            <input type="checkbox" id="checkbox1" name="checkbox_group[]" value="option1" checked>
+            <label for="checkbox1">Recieve promotional messages</label>
+            <input type="checkbox" id="checkbox2" name="checkbox_group[]" value="option2">
+            <label for="checkbox2">Critical Updates related to my account</label>
+    
+            
+    
+            <label for="file-input">Please upload a document that serves as proof of identity.</label>
+            <input type="file" id="file-input" name="file_input">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>
